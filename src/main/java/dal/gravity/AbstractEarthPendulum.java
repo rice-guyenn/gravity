@@ -6,9 +6,6 @@ package dal.gravity;
  */
 public abstract class AbstractEarthPendulum extends AbstractPendulum {
 
-    /** gravitational constant */
-    public static final double GRAVITY = 9.80665;
-
     /**
      * Creates a new Pendulum instance using
      * inLength: the string length (>0)
