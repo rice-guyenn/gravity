@@ -15,9 +15,9 @@ public class SimplePendulum extends AbstractEarthPendulum {
      */
     public SimplePendulum (double inLength, double inMass, double inTheta0) {
 	super (inLength, inMass, inTheta0);
-	angularFrequency = Math.sqrt (this.getGravitationalField () / this.getStringLength ());
+	angularFrequency = Math.sqrt (this.g.getGravitationField() / this.getStringLength ());
 	periodOfMotion = 2 * Math.PI 
-	    * Math.sqrt (this.getStringLength () / this.getGravitationalField ());
+	    * Math.sqrt (this.getStringLength () / this.g.getGravitationField ());
     }
 
     /**
